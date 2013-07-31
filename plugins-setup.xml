@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="project-name" default="plugins-installation">
+
+    <target name="plugins-installation">
+        <antcall target="device" />
+        <antcall target="accelerometer" />
+        <antcall target="compass" />
+        <antcall target="dialogs" />
+        <antcall target="vibration" />
+        <antcall target="in-app-browser" />
+        <antcall target="splashscreen" />
+    </target>
+
+    <target name="device">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git" />
+        </exec>
+    </target>
+
+    <target name="network-information">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-network-information.git" />
+        </exec>
+    </target>
+
+    <target name="battery-status">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-battery-status.git" />
+        </exec>
+    </target>
+
+    <target name="accelerometer">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-motion.git" />
+        </exec>
+    </target>
+
+    <target name="compass">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-orientation.git" />
+        </exec>
+    </target>
+
+    <target name="geolocation">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git" />
+        </exec>
+    </target>
+
+    <target name="camera">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-camera.git" />
+        </exec>
+    </target>
+
+    <target name="media-capture">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-media-capture.git" />
+        </exec>
+    </target>
+
+    <target name="media">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-media.git" />
+        </exec>
+    </target>
+
+    <target name="file">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-file.git" />
+        </exec>
+    </target>
+
+    <target name="file-transfer">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-file-transfer.git" />
+        </exec>
+    </target>
+
+    <target name="dialogs">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git" />
+        </exec>
+    </target>
+
+    <target name="vibration">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-vibration.git" />
+        </exec>
+    </target>
+
+    <target name="contacts">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-contacts.git" />
+        </exec>
+    </target>
+
+    <target name="globalization">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-globalization.git" />
+        </exec>
+    </target>
+
+    <target name="splashscreen">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git" />
+        </exec>
+    </target>
+
+    <target name="in-app-browser">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git" />
+        </exec>
+    </target>
+
+    <target name="debug-console">
+        <exec executable="cordova">
+            <arg value="plugin"/>
+            <arg value="add"/>
+            <arg value="https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git" />
+        </exec>
+    </target>
+</project>
